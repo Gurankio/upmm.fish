@@ -73,7 +73,7 @@ $ upmm [<option>]
 ![demo][]
 
 | **Option**       | **Description**                             |
-| ---------------- | ------------------------------------------- |
+|------------------|---------------------------------------------|
 | `upmm`           | Updates everything.                         |
 | `upmm --brew`    | Updates Homebrew Formulas and Casks.        |
 | `upmm --npm`     | Updates npm global packages.                |

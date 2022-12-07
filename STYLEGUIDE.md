@@ -1,6 +1,6 @@
 # Style Guides <!-- omit in toc -->
 
-All codebases follow a style guide according to best practices in their respective languages. We enforces the following style guides by language:
+All codebases follow a style guide according to best practices in their respective languages. We enforce the following style guides by language:
 
 **Table of Contents**
 - [Commit Messages](#commit-messages)
@@ -33,7 +33,7 @@ If the commit reverts a previous commit, it should begin with `revert: `, follow
 Must be one of the following:
 
 | Type           | Description                                                                                                  |
-| -------------- | ------------------------------------------------------------------------------------------------------------ |
+|----------------|--------------------------------------------------------------------------------------------------------------|
 | **`build`**    | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).         |
 | **`chore`**    | Used when changes are about organization, not about logic.                                                   |
 | **`ci`**       | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs). |
