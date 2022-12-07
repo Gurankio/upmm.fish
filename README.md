@@ -82,6 +82,7 @@ $ upmm [<option>]
 | `upmm --gem`     | Updates the installed gems.                 |
 | `upmm --pip2`    | Updates Python 2.7.X pips.                  |
 | `upmm --pip3`    | Updates Python 3.X pips.                    |
+| `upmm --pipx`    | Updates pipX binaries.                      |
 | `upmm --mas`     | Updates Applications in the Mac App Store.  |
 | `upmm --macos`   | Updates the macOS Operating System.         |
 | `upmm --version` | Show the current version.                   |
