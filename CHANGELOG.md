@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/demartini/upmm.fish/compare/v1.1.1...v1.1.2) (2022-12-07)
+
+
+### Bug Fixes
+
+* command queries ([0310cba](https://github.com/demartini/upmm.fish/commit/0310cbae80dbc0f2ae570462737f2b9f1e768eb4))
+
 ### [1.1.1](https://github.com/demartini/upmm.fish/compare/v1.1.0...v1.1.1) (2022-12-07)
 
 
