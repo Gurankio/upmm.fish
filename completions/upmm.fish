@@ -9,6 +9,7 @@ complete --no-files --command $UPMM_CMD --long-option fish --description "Update
 complete --no-files --command $UPMM_CMD --long-option gem --description "Updates the installed gems."
 complete --no-files --command $UPMM_CMD --long-option pip2 --description "Updates Python 2.7.X pips."
 complete --no-files --command $UPMM_CMD --long-option pip3 --description "Updates Python 3.X pips."
+complete --no-files --command $UPMM_CMD --long-option pipx --description "Updates pipX binaries."
 complete --no-files --command $UPMM_CMD --long-option mas --description "Updates Applications in the Mac App Store."
 complete --no-files --command $UPMM_CMD --long-option macos --description "Updates the macOS Operating System."
 complete --no-files --command $UPMM_CMD --long-option version --description "Show the current version."

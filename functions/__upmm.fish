@@ -33,6 +33,9 @@ function __upmm -d "Update My macOS"
         case '--pip3'
             _upmm_pip3
 
+        case '--pipx'
+            _upmm_pipx
+
         case '--mas'
             _upmm_mas
 
@@ -61,6 +64,7 @@ function _upmm_help
     echo -e "   --gem       Updates the installed gems."
     echo -e "   --pip2      Updates Python 2.7.X pips."
     echo -e "   --pip3      Updates Python 3.X pips."
+    echo -e "   --pipx      Updates pipX binaries."
     echo -e "   --mas       Updates Applications in the Mac App Store."
     echo -e "   --macos     Updates the macOS Operating System."
     echo -e "   --version   Show the current version."
@@ -128,6 +132,13 @@ function _upmm_pip3
     end
 end
 
+function _upmm_pipx
+    if command -s pipx >/dev/null
+        echo -e (set_color cyan)"→ Updating pipX binaries..."(set_color normal)
+        pipx upgrade-all
+    end
+end
+
 function _upmm_mas
     if command -s mas >/dev/null
         echo -e (set_color cyan)"→ Updating Mac App Store Applications..."(set_color normal)
@@ -149,6 +160,7 @@ function _upmm_all
     _upmm_gem
     _upmm_pip2
     _upmm_pip3
+    _upmm_pipx
     _upmm_mas
     _upmm_macos
 end
