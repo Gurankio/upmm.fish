@@ -73,7 +73,7 @@ function _upmm_help
 end
 
 function _upmm_brew
-    if command -s brew >/dev/null
+    if command --query brew
         echo -e (set_color cyan)"→ Updating Brew Formulasand Casks..."(set_color normal)
         brew update
         brew upgrade
@@ -82,14 +82,14 @@ function _upmm_brew
 end
 
 function _upmm_npm
-    if command -s npm >/dev/null
+    if command --query npm
         echo -e (set_color cyan)"→ Updating npm global packages..."(set_color normal)
         npm update --global
     end
 end
 
 function _upmm_yarn
-    if command -s yarn >/dev/null
+    if command --query yarn
         echo -e (set_color cyan)"→ Updating Yarn global packages..."(set_color normal)
         yarn global upgrade
     end
@@ -111,7 +111,7 @@ function _upmm_fish
 end
 
 function _upmm_gem
-    if command -s gem >/dev/null
+    if command --query gem
         echo -e (set_color cyan)"→ Updating gems..."(set_color normal)
         gem update
         gem cleanup
@@ -119,28 +119,28 @@ function _upmm_gem
 end
 
 function _upmm_pip2
-    if command -s pip2 >/dev/null and if command -s python2 >/dev/null
+    if command --query pip2; and command --query python2
         echo -e (set_color cyan)"→ Updating Python 2.7.X pips..."(set_color normal)
         python2 -c "import pkg_resources; from subprocess import call; packages = [dist.project_name for dist in pkg_resources.working_set]; call('pip install --upgrade ' + ' '.join(packages), shell=True)"
     end
 end
 
 function _upmm_pip3
-    if command -s pip3 >/dev/null and if command -s python3 >/dev/null
+    if command --query pip3; and command --query python3
         echo -e (set_color cyan)"→ Updating Python 3.X pips..."(set_color normal)
         python3 -c "import pkg_resources; from subprocess import call; packages = [dist.project_name for dist in pkg_resources.working_set]; call('pip3 install --upgrade ' + ' '.join(packages), shell=True)"
     end
 end
 
 function _upmm_pipx
-    if command -s pipx >/dev/null
+    if command --query pipx
         echo -e (set_color cyan)"→ Updating pipX binaries..."(set_color normal)
         pipx upgrade-all
     end
 end
 
 function _upmm_mas
-    if command -s mas >/dev/null
+    if command --query mas
         echo -e (set_color cyan)"→ Updating Mac App Store Applications..."(set_color normal)
         mas outdated
         mas upgrade
